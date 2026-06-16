@@ -1,0 +1,58 @@
+ @font-face {
+    font-family: 'ouvrieres soldates';
+    src: url('ouvrieres-soldates.woff2') format('woff2'),
+        url('ouvrieres-soldates.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+ body { background-color: lightblue;
+     background-image: url("dreamy background.jpg"); background-size: 100px;font-family:Apple Chancery;}
+ 
+ p {
+        color: mediumvioletred; background-color: burlywood;
+        font-size:25px;
+        border: 10px solid black;
+        padding:50px;
+
+        /* margin is for external spacing of elements */
+        margin:20px;
+
+        font-weight:bold;
+       } 
+
+       p:hover {
+        background-color: violet;
+       }
+
+       h1 {
+        color: rgb(255, 0, 111);
+        font-family: "Iosevka Charon", "menlo", monospace;
+        font-weight: lighter;
+        font-style: italic;
+
+        color: rgb(35, 10, 255);
+       }
+
+       h2 {
+        font-family: 'ouvrieres soldates';
+        color: rgb(35, 10, 255);
+       }
+
+       .banner {
+        background-color: rgb(173, 230, 176);
+        font-size: 40px;
+        text-align: center;
+       }
+
+       a {
+        background-color:antiquewhite;color:blue;
+        text-decoration: none;
+       }
+
+       a:hover {
+        background-color:antiquewhite;
+        color:blue;
+        text-decoration: underline;
+       }
