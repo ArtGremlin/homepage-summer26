@@ -1,3 +1,78 @@
 body {
-    background-color: rgb(151, 102, 27);
+    background-color: rgb(33, 44, 44);
 }
+
+
+
+   h1 {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(249, 255, 175);
+    font-size:50px;
+    }
+
+   marquee {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:whitesmoke;
+    font-size:20px;
+    }
+
+   h2 {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(249, 255, 175);
+    font-size:30px;
+   }
+
+   .banner {
+    background-color:rgb(175, 253, 227);
+    padding:10px;
+    margin:20px;
+   }
+
+   li {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+    color:rgb(33, 44, 44);
+   }
+
+   #downed {
+    display: block;
+    margin: auto;
+    width:30%
+}
+
+h3 {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(249, 255, 175);
+    font-size:30px;
+   }
+
+   p {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:whitesmoke;
+    font-size:20px;
+    background-color: rgb(8, 68, 54);
+    border: 1px solid rgb(249, 255, 175);
+    padding:40px;
+    margin:20px;
+   }
+
+img {
+    display: block;
+    margin: auto;
+    width:50%
+}
+
+
+   
