@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.box {
+    background-color:rgb(167, 95, 62);
+    width:200px;
+    height:200px;
+    position:relative;
+
+    /* animation-name:test; */
+    /* animation-duration:1s; */
+    /* animation-delay:-2s; */
+    /* animation-iteration-count:1; */
+    /* animation-timing-function:linear; */
+
+    /* animation fill mode does not require direction */
+    /* animation-direction:alternate;  */
+    /* animation-fill-mode:forwards; */
+
+/* this animation shorthand which includes animation:name,duration,delay,iteration count,timing function,direction,and fill mode. */
+    animation: test 4s 2s infinite linear alternate both;
+}
+
+@keyframes test {
+    0% {
+        background-color:rgb(196, 189, 85);
+        left:0;
+    }
+    100% {
+        background-color:rgb(254, 254, 155);
+        left:100px
+
+    }
+}

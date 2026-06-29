@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+h1 {
+    font-size:40px;
+    color:aliceblue;
+    z-index: 7;
+}
+
+.container {
+    background-color:lightblue;
+    width:2000px;
+    height:2000px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    animation: pulse 90s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color:lightblue;
+    }
+
+    25% {
+        background-color:rgb(255, 141, 109);
+    }
+
+    50% {
+        background-color:rgb(32, 48, 138);
+    }
+
+    75% {
+        background-color:rgb(255, 180, 109);
+    }
+
+    100% {
+        background-color:lightblue;
+    }
+
+}
+
+.sun {
+    background-color:blanchedalmond;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    animation: sunrise 90s linear infinite;
+    position:absolute;
+    left:550px;
+    z-index:0;
+}
+
+
+@keyframes sunrise {
+    0% {
+        top:0px;
+    }
+
+    25% {
+        top:180px;
+    }
+
+    50% {
+        top:400px;
+    }
+
+    75% {
+        top:180px;
+    }
+
+    100% {
+        top:0px;
+    }
+}
+
+.moon {
+    background-color:rgb(205, 235, 255);
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    animation: moonrise 90s linear infinite;
+    position:absolute;
+    left:1300px;
+    z-index:0;
+}
+
+@keyframes moonrise {
+    0% {
+        top:400px;
+    }
+
+    15% {
+        top:300px;
+    }
+
+    25% {
+        top:180px;
+    }
+
+    50% {
+        top:0px;
+    }
+
+    75% {
+        top:180px;
+    }
+
+    100% {
+        top:400px;
+    }
+}
+
+.hill-1 {
+    background-color:green;
+    border-radius:60%;
+    opacity:0.85;
+    position: fixed;
+    width:700px;
+    height:450px;
+    top:300px;
+    left:-100px;
+    z-index:1;
+}
+
+.hill-2 {
+    background-color:green;
+    border-radius:80%;
+    opacity:0.98;
+    position: fixed;
+    width:800px;
+    height:300px;
+    left:1000px;
+    bottom:100px;
+     z-index:1;
+}
+
+.hill-3 {
+    background-color:green;
+    border-radius:45%;
+    opacity:0.98;
+    position: fixed;
+    width:400px;
+    height:375px;
+    left:500px;
+    bottom:-50px;
+    z-index:1;
+}
+
+.ground {
+    background-color:green;
+    width:2000px;
+    height:275px;
+    position:fixed;
+    bottom:0px;
+    opacity:1.0;
+    z-index:2;
+}
+
+.road-1 {
+    background-color:grey;
+    width:2000px;
+    height:80px;
+    position:absolute;
+    top:450px;
+    z-index:3;
+}
+
+.road-2 {
+    background-color:grey;
+    width:2000px;
+    height:80px;
+    position:absolute;
+    top:570px;
+    z-index:3;
+}
+
+.white-line {
+    width:2000px;
+    height:130px;
+    border: whitesmoke dotted 8px;
+    position:absolute;
+    top:485px;
+    left:-100px;
+    z-index:4;
+}
+
+.car-1{
+    position:absolute;
+    z-index:5;
+    width:100px;
+    height:100px;
+    animation: unomove 25s linear infinite;
+    bottom:200px;
+    cursor:active;
+}
+
+@keyframes unomove {
+    0%{
+        left:-115px;
+    }
+    100%{
+        left:2000px;
+    }
+}
+
+
+.car-2{
+    position:absolute;
+    z-index:5;
+    width:100px;
+    height:100px;
+    animation: dosmove 20s linear infinite;
+    bottom:65px;
+}
+
+@keyframes dosmove {
+    0%{
+        left:1500px;
+    }
+    100%{
+        left:-130px;
+    }
+}
+
+/* summer is default */
+
+
+/* spring */
+@media screen and (max-width:1400px) {
+    .hill-1 {
+        background-color:yellowgreen;
+    }
+    .hill-2 {
+        background-color:yellowgreen;
+    }
+    .hill-3 {
+        background-color:yellowgreen;
+    }
+    .ground {
+        background-color:yellowgreen;
+    }
+}
+
+/* winter */
+@media screen and (max-width:1000px) {
+    .hill-1 {
+        background-color:whitesmoke;
+    }
+    .hill-2 {
+        background-color:whitesmoke;
+    }
+    .hill-3 {
+        background-color:whitesmoke;
+    }
+    .ground {
+        background-color:whitesmoke;
+    }
+    .road-1{
+        background-color:rgb(167, 214, 255);
+    }
+    .road-2{
+        background-color:rgb(167, 214, 255);
+    }
+    .car-1 {
+        animation: unomove 6s linear infinite;
+    }
+    .car-2 {
+        animation: dosmove 4s linear infinite;
+    }
+
+    @keyframes unomove {
+    0%{
+        left:-115px;
+        rotate:0deg;
+    }
+
+    10%{
+        bottom:180px;
+        rotate:-5deg;
+    }
+
+    20%{
+        bottom:165px;
+        rotate:5deg;
+    }
+
+    25%{
+        bottom:210px;
+        rotate:360deg;
+    }
+
+    
+
+    100%{
+        left:2000px;
+        rotate:-360px;
+    }
+}
+
+@keyframes dosmove {
+    0%{
+        left:1500px;
+        bottom:40px;
+    }
+
+    90%{
+        rotate:-45deg;
+    }
+
+    92% {
+        rotate:360deg;
+    }
+
+    95% {
+        rotate:-360deg;
+        bottom:100px;
+    }
+
+    100%{
+        left:-130px;
+    }
+}
+}
+
+/* fall */
+@media screen and (max-width:600px) {
+    .hill-1 {
+        background-color:rgb(161, 87, 7);
+    }
+    .hill-2 {
+        background-color:rgb(161, 87, 7);
+    }
+    .hill-3 {
+        background-color:rgb(161, 87, 7);
+    }
+    .ground {
+        background-color:rgb(161, 87, 7);
+    }
+    .road-1{
+        background-color:grey;
+    }
+    .road-2{
+        background-color:grey;
+    }
+    .car-1 {
+        animation: unomove 25s linear infinite;
+    }
+    .car-2 {
+        animation: dosmove 20s linear infinite;
+    }
+
+    @keyframes unomove {
+    0%{
+        left:-115px;
+    }
+    100%{
+        left:2000px;
+    }
+}
+    @keyframes dosmove {
+    0%{
+        left:1500px;
+    }
+    100%{
+        left:-130px;
+    }
+}
+}

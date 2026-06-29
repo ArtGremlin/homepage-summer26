@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    background-color:blanchedalmond;
+}
+
+img {
+    max-width:100%;
+}
+
+.responsive {
+    background-color:lightcoral;
+    max-width:800px;
+    padding:10px;
+    margin:0 auto;
+}
+
+/* max-width = desktop first, media queries get progressively smaller as we move on down the css */
+/* min-width = mobile first, media queries get progressively larger as we move on down the css  */
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color:lightgreen;
+    }
+    .responsive {
+    background-color:beige;
+}
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color:rgb(178, 144, 238);
+    }
+    .responsive {
+    background-color:rgb(102, 102, 60);
+}
+}
+

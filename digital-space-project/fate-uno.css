@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.beachbg {
+    scale:100%;
+}
+
+.picnicbg {
+    scale:100%;
+}
+
+.das-car-1 {
+    width:200px;
+    height:200px;
+    position:absolute;
+
+
+}
