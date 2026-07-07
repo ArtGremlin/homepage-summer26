@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.body {
+    background-color:beige;
+}
+
+.menu {
+    background:lightgreen;
+    position:fixed;
+    top:0px;
+    right:-300px;
+    width:300px;
+    height:100vh;
+
+    padding:20px;
+    text-align:center;
+    font-size:150%;
+    transition:right 0.5s;
+}
+
+.active {
+    background-color:lightblue;
+    font-size:150%;
+    right:0px;
+}
+
+.gear {
+    background-color:rgb(228, 61, 61);
+    width:100px;
+    height:100px;
+    position:fixed;
+    bottom:30px;
+    left:30px;
+    transition:rotate .3s;
+}
+
+.spin {
+    rotate:180deg;
+}
+
+.glow {
+    background:rgb(202, 71, 189);
+}

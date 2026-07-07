@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background-color: rgb(5, 57, 120);
+}
+
+.container {
+    background-color:lightblue;
+    width:2000px;
+    height:2000px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    animation: pulse 90s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color:lightblue;
+    }
+
+    25% {
+        background-color:rgb(255, 141, 109);
+    }
+
+    50% {
+        background-color:rgb(32, 48, 138);
+    }
+
+    75% {
+        background-color:rgb(255, 180, 109);
+    }
+
+    100% {
+        background-color:lightblue;
+    }
+
+}
+
+.hive {
+    width:500px;
+    height:500px;
+    position:absolute;
+    top:50px;
+    right:500px;
+    animation:pulsate 10s alternate infinite;
+}
+
+@keyframes pulsate {
+    0%{
+        scale:1;
+    }
+
+    25%{
+         scale:1.5;
+    }
+
+    50%{
+         scale:1;
+    }
+
+    50%{
+         scale:0.5;
+    }
+}
+
+
+.bee {
+    width:100px;
+    height:100px;
+    position:fixed;
+    bottom:275px;
+    right:690px;
+    animation: bee-move 10s infinite linear;
+    /* for later:  rotate: random (element-shared, 0deg, 360deg); */
+}
+
+@keyframes bee-move{
+    0%{
+        scale:1;
+        opacity:0;
+        bottom:275px;
+        opacity:1.0;
+    }
+    10%{
+        scale:0.5;
+    }
+    20%{
+        scale: 1;
+    }
+    30%{
+        scale:0.5;
+    }
+    40%{
+        scale: 1;
+    }
+    60%{
+        scale:0.5;
+        bottom:2000px;
+    }
+    100%{
+        scale:1;
+        opacity:0;
+        bottom:275px;
+    }
+}

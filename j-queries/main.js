@@ -1,0 +1,31 @@
+$(".dark-btn").click(
+    function(){
+        $(".box").toggleClass("dark");
+        $(".container").toggleClass("dark");
+    }
+);
+
+$(".spin-btn").click(
+    function(){
+        $(".box").toggleClass("spin");
+    }
+);
+
+$(".reveal-btn").click(
+    function(){
+        $(".racoon").show();
+        $(".reveal-btn").hide();
+    }
+);
+
+$(".reset-btn").click(
+    function(){
+        location.reload();
+    }
+);
+
+$( function() {
+    $( ".racoon" ).draggable();
+    $( ".draggable" ).draggable();
+  } );
+
