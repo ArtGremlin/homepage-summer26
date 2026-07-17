@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background-color:rgb(32, 51, 47);
+    background-image: url(assets/start.jpg);
+}
+
+.start {
+    width:800px;
+    height:550px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -40%;
+}
+
+
+.dialog {
+    display: flex;
+    justify-content: center;
+    z-index:1;
+}
+
+.text-box {
+    text-align:center;
+    background-color:rgb(245, 247, 213);
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+    width:1000px;
+    height:165px;
+    padding:20px;
+    z-index:2;
+    overflow:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    text-align: center;
+}
+
+.dialog-btn {
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    background-color: blueviolet;
+    z-index:1;
+}
+
+
+.choice-box {
+    background-color:rgb(241, 255, 240);
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size:20px;
+    width:100vw;
+    padding:50px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    text-align: center;
+}
+
+.scene {
+   
+    position: fixed;
+    top:180px;
+    height: calc(100vh - 200px);
+    left: 0;
+    width: 100%;
+}
+
+.appear {
+    animation: fade-in 1.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity:0.0;
+    }
+
+    100% {
+        opacity:1.0;
+    }
+}
+
+.disappear {
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    0% { 
+        opacity:1.0;
+    }
+
+    50% { 
+        opacity:0.5;
+    }
+
+
+    100% { 
+        opacity:0.0;
+    }
+}
+

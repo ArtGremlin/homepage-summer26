@@ -1,0 +1,126 @@
+
+body {
+    background-color:rgb(49, 29, 16);
+    background-image: url(../assets/ze-counter.jpg);
+}
+
+.clerk {
+    position:absolute;
+    width:150px;
+    top:50%;
+    left:50%;
+    translate:-205% -110%;
+}
+
+.roller {
+    position:absolute;
+    width:200px;
+    top:50%;
+    left:50%;
+    translate:-305% 15%;
+}
+
+.middle-rat {
+    position:absolute;
+    width:100px;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+}
+
+.left-rat {
+    position:absolute;
+    width:100px;
+    top:50%;
+    left:50%;
+    translate:-200% 0%;
+}
+
+.right-rat {
+    position:absolute;
+    width:100px;
+    top:50%;
+    left:50%;
+    translate:150% -39%;
+}
+
+
+
+.rat-dance {
+    animation: dance 1s infinite alternate;
+}
+
+@keyframes dance {
+    0%{rotate: 0deg;
+    }
+
+    25%{rotate: -45deg;
+    }
+
+    50%{rotate: 0deg;
+    }
+
+    75%{rotate: 45deg;
+    }
+
+    100%{rotate: 0deg;
+    }
+}
+
+.dawg1 {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-505% -140%;
+    animation:spin 2s linear infinite;
+}
+
+.dawg {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-205% -70%;
+}
+
+.bills {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-105% -40%;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0deg;
+    }
+
+    50% {
+        rotate:180deg;
+    }
+
+    100% {
+        rotate:360deg;
+    }
+}
+
+.consume {
+    position:absolute;
+    width:600px;
+    top:50%;
+    left:50%;
+    translate:-50% 0%;
+    animation: nom 0.07s alternate infinite;
+}
+
+@keyframes nom {
+    0% {
+    translate:-50% -10%;
+    }
+
+    100% {
+    translate:-50% 15%;
+    }
+}

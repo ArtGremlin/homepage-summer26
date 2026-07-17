@@ -1,0 +1,12 @@
+body {
+    background-color:rgb(82, 60, 27);
+}
+
+.bedsheets {
+    width:800px;
+    height:550px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -30%;
+}

@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background-color:rgb(228, 125, 88);
+}
+
+.counter {
+    position:absolute;
+    width:100%;
+    top:50%;
+    left:50%;
+    translate:-50% -31%;
+    z-index:0;
+}
+
+.blackbg {
+    position:absolute;
+    width:1000px;
+    height:1000px;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    z-index:0;
+    background-color: black;
+}
+
+.crapper {
+    position:absolute;
+    width:100%;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    z-index:0;
+}
+
+.clerk {
+    position:absolute;
+    width:150px;
+    top:50%;
+    left:50%;
+    translate:-205% -110%;
+}
+
+.roller {
+    position:absolute;
+    width:200px;
+    top:50%;
+    left:50%;
+    translate:-305% 15%;
+}
+
+.dawg1 {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-205% -70%;
+}
+
+
+.bills {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-105% -40%;
+}
+
+.consume {
+    position:absolute;
+    width:600px;
+    top:50%;
+    left:50%;
+    translate:-50% 0%;
+    animation: nom 0.07s alternate infinite;
+}
+
+@keyframes nom {
+    0% {
+    translate:-50% -10%;
+    }
+
+    100% {
+    translate:-50% 15%;
+    }
+}
+
+.sick {
+    animation: wobble 5s alternate infinite;
+}
+
+@keyframes wobble {
+    0% {
+    scale:1;
+    }
+
+    100% {
+    scale:1.5;
+    }
+}

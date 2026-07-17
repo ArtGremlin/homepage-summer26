@@ -70,22 +70,44 @@ body {
     }
 }
 
+.bee-path {
+    width:100px;
+    height:60vw;
+    position:fixed;
+    bottom:275px;
+    right:690px;
+    rotate: random(0deg, 360deg); 
+    transform-origin: bottom center;
+    z-index:9;
+    background-color:blue;
+     animation: random-path 5s infinite linear;
+
+}
+
+@keyframes random-path{
+    100%{
+        rotate: random(0deg, 360deg); 
+    }
+}
 
 .bee {
     width:100px;
     height:100px;
-    position:fixed;
-    bottom:275px;
-    right:690px;
-    animation: bee-move 10s infinite linear;
+    position:absolute;
+    bottom:0;
+    left:0;
+    /* position:fixed; */
+    /* bottom:275px; */
+    /* right:690px; */
+    animation: bee-move 5s infinite linear;
     /* for later:  rotate: random (element-shared, 0deg, 360deg); */
 }
 
 @keyframes bee-move{
     0%{
         scale:1;
-        opacity:0;
-        bottom:275px;
+        opacity:1;
+        bottom:0px;
         opacity:1.0;
     }
     10%{
@@ -100,13 +122,13 @@ body {
     40%{
         scale: 1;
     }
-    60%{
+    99.99%{
         scale:0.5;
-        bottom:2000px;
+        bottom:100%;
     }
     100%{
         scale:1;
         opacity:0;
-        bottom:275px;
+        bottom:0px;
     }
 }

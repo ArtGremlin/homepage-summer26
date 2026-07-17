@@ -1,0 +1,59 @@
+body {
+    background-color:rgb(49, 29, 16);
+    background-image: url(../assets/ze-counter.jpg);
+}
+
+.clerk {
+    position:absolute;
+    width:150px;
+    top:50%;
+    left:50%;
+    translate:-205% -110%;
+}
+
+.roller {
+    position:absolute;
+    width:200px;
+    top:50%;
+    left:50%;
+    translate:-305% 15%;
+}
+
+.scan-dwink {
+    position:absolute;
+    width:30px;
+    top:50%;
+    left:50%;
+    translate:-1105% -140%;
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0deg;
+    }
+
+    50% {
+        rotate:180deg;
+    }
+
+    100% {
+        rotate:360deg;
+    }
+}
+
+.dwink {
+    position:absolute;
+    width:30px;
+    top:50%;
+    left:50%;
+    translate:-205% -70%;
+}
+
+.bills {
+    position:absolute;
+    width:60px;
+    top:50%;
+    left:50%;
+    translate:-105% -40%;
+}
