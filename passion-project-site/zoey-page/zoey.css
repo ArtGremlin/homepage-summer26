@@ -1,0 +1,53 @@
+
+body {
+    background-color:rgb(100, 219, 215)
+}
+     
+    p {
+    color: rgb(187, 232, 241); background-color:rgb(75, 77, 77); font-size:18px;
+    border: 10px dotted rgb(162, 79, 203);
+    padding:50px;
+
+    margin:20px;
+
+    font-weight:regular; 
+    }
+
+    h1 {
+         font-family: "Carter One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+
+
+        color:rgb(37, 51, 48); 
+       }
+
+
+        li {
+            font-family: "Iosevka Charon", "menlo", monospace;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 25px;
+        text-align: left;
+        margin: 2px;
+        padding: 10px;
+
+        color: rgb(37, 51, 48);
+    }
+
+     .banner {
+            background-color:rgb(246, 204, 75);
+            font-size: 40px;
+            text-align: center
+        }
+
+    p {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+  color:rgb(230, 232, 117)    
+}  
+
+

@@ -1,0 +1,57 @@
+
+body {
+    background-color:rgb(182, 124, 237)
+}
+     
+    p {
+    color: rgb(187, 187, 241); background-color:rgb(235, 214, 133); font-size:18px;
+    border: 10px dotted rgb(12, 156, 132);
+    padding:50px;
+
+    margin:20px;
+
+    font-weight:regular; 
+    }
+
+    h1 {
+         font-family: "Carter One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        
+        color:rgb(83, 6, 145); 
+       }
+
+
+        li {
+            font-family: "Iosevka Charon", "menlo", monospace;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 25px;
+        text-align: left;
+        margin: 2px;
+        padding: 10px;
+
+        color: rgb(7, 141, 182);
+    }
+
+     .banner {
+            background-color:rgb(218, 212, 101);
+            font-size: 40px;
+            text-align: center
+        }
+
+    p {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+  color:rgb(71, 4, 84)    
+} 
+
+
+img {
+    display: block;
+    margin: auto;
+    width:50%
+}
+
